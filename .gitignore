@@ -1,0 +1,68 @@
+# Scala and sbt specific
+*.class
+*.log
+*.cache
+project/target/
+target/
+lib_managed/
+src_managed/
+dist/*
+tmp/*
+out/
+*.tasty
+
+# sbt specific
+/.bsp/
+/.bloop/
+/.metals/
+.history
+/.idea/
+*.iws
+*.iml
+*.ipr
+.idea/
+
+# IntelliJ IDEA specific
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Worksheets (if using Scala Worksheets)
+*.sc
+
+# Mac OS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+
+# Linux specific
+*.swp
+*~
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Packaging
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual Environments
+.env
+.virtualenv/
+
+# Ignore credentials
+*.pem
+*.key
+*.cert
+
+# Avoid accidental inclusion of npm modules or packages
+node_modules/

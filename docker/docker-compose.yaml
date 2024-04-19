@@ -1,0 +1,13 @@
+version: '3.8'  # Use a suitable version for Docker Compose
+
+services:
+  redis:
+    image: redis:7.2.4  # Use this specific Redis image
+    container_name: my-redis  # Same as --name in the Docker run command
+    ports:
+      - "6379:6379"  # Map port 6379 on the host to 6379 in the container
+    restart: always  # Optional: Ensures the container restarts if it goes down
+    command: redis-server /usr/local/etc/redis/redis.conf  # Get configuration from config file
+    volumes:
+      - ./redis/config/redis.conf:/usr/local/etc/redis/redis.conf  # Maps the configuration
+      - ./redis/data:/data  # Maps './redis_data' on the host to '/data' in the container
